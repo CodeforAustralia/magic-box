@@ -15,7 +15,7 @@
                     <a href="#">Your Details</a>
                 </div>
                 <div class="panel-body">
-                    <a href="#">Letters</a>
+                    <a href="/letters">Letters</a>
                 </div>
                 <div class="panel-body">
                     <a href="#">Status on the Hogwarts Register</a>

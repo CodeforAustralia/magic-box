@@ -24,9 +24,9 @@ Route::get('/letters', function () {
       $reference_id = Auth::user()->reference_id;
       $letters = DB::table('letters')->where('reference_id', $reference_id)->get();
 #      return $letters;
-      return view('letters', compact ('letters'));
+      return view('pages/letters', compact ('letters'));
     } else {
-      return view('welcome');
+      return view('pages/welcome');
     }
 });
 
