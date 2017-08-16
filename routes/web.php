@@ -17,7 +17,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index')->name('ho†me');
 
 Route::get('/letters', function () {
   if (Auth::check()) {
@@ -29,3 +29,7 @@ Route::get('/letters', function () {
       return view('welcome');
     }
 });
+
+
+Route::get('/pdf', 'PdfController@index')->name('pdf');
+
