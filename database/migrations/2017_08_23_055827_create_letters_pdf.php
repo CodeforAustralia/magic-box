@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateLettersTable extends Migration
+class CreateLettersPdf extends Migration
 {
     /**
      * Run the migrations.
@@ -13,15 +13,13 @@ class CreateLettersTable extends Migration
      */
     public function up()
     {
-        Schema::create('letters', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->uuid('uuid');
-            $table->string('reference_id');
+        Schema::create('letters_pdfs', function (Blueprint $table) {
+            $table->increments('id');
+            $table->integer('letter_id')->unsigned();
             $table->string('template_id');
+            $table->string('reference_id');
             $table->string('filename');
-            $table->date('letter_date');
-            $table->timestamp('created_at')->nullable();
-            $table->timestamp('updated_at')->nullable();
+            $table->timestamps();
         });
     }
 
@@ -32,6 +30,6 @@ class CreateLettersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('letters');
+        //
     }
 }

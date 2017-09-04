@@ -12,13 +12,16 @@
                     <i class="icon-magic"></i></div>
 
                 <div class="panel-body">
-                    <a href="#">Your Details</a>
+                    <a href="/accounts">Account Details</a>
+                </div>
+                <div class="panel-body">
+                    <a href="/upload">Upload</a>
                 </div>
                 <div class="panel-body">
                     <a href="/letters">Letters</a>
                 </div>
                 <div class="panel-body">
-                    <a href="#">Status on the Hogwarts Register</a>
+                    <a href="/status">Status</a>
                 </div>
             </div>
         </div>
